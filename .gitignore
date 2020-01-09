@@ -3,3 +3,5 @@
 /target/
 .idea/
 api-many-to-one.iml
+quarkus.log
+

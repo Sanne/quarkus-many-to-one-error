@@ -91,7 +91,7 @@ public class ParticipacaoProjeto extends AbstractModelDeletavel {
 	 * torna OBSOLETA após a inserção definitiva dos inputs.
 	 */
 //	@Type(type = "jsonb")
-	@Column(columnDefinition = "jsonb", name = "`partialData`")
+	@Column(name = "`partialData`")
 	private String partialData;
 
 	@Column(name = "`dataCriacao`", nullable = false, columnDefinition = "TIMESTAMP WITH TIME ZONE")

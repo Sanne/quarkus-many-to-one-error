@@ -124,11 +124,11 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-vertx</artifactId>
     </dependency>
-    <dependency>
+    <!--<dependency>
       <groupId>com.vladmihalcea</groupId>
 	  <artifactId>hibernate-types-52</artifactId>
 	  <version>2.7.0</version>
-	</dependency>
+	</dependency>-->
 	<dependency>
 	  <groupId>net.coobird</groupId>
 	  <artifactId>thumbnailator</artifactId>

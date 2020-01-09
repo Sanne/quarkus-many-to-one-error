@@ -25,7 +25,7 @@ import org.hibernate.annotations.Where;
 import com.proposito.model.AbstractModelDeletavel;
 import com.proposito.model.usuario.Cargo;
 import com.proposito.model.usuario.Usuario;
-import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
+//import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
 
 /**
  * Entidade responsável por armazenar os diversos {@link Usuario}s participantes
@@ -37,7 +37,7 @@ import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
 @Entity(name = "ParticipacaoProjeto")
 @Table(name = "participacao_projeto", indexes = { @Index(columnList = "hash") })
 @Where(clause = "deletado = false")
-@TypeDef(name = "jsonb", typeClass = JsonBinaryType.class)
+//@TypeDef(name = "jsonb", typeClass = JsonBinaryType.class)
 public class ParticipacaoProjeto extends AbstractModelDeletavel {
 
 	@Id
@@ -90,7 +90,7 @@ public class ParticipacaoProjeto extends AbstractModelDeletavel {
 	 * lista com todos os {@link InputProjeto} em formato json OBS: essa coluna se
 	 * torna OBSOLETA após a inserção definitiva dos inputs.
 	 */
-	@Type(type = "jsonb")
+//	@Type(type = "jsonb")
 	@Column(columnDefinition = "jsonb", name = "`partialData`")
 	private String partialData;
 
